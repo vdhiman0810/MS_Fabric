@@ -4,18 +4,49 @@ workspaces:
     domain: platform
     environment: dev
     description: Platform engineering and admin automation workspace
+    ownerGroup: sg-fabric-platform-engineers
+    adminGroups:
+      - sg-fabric-platform-engineers
+      - sg-fabric-admins
+    contributorGroups: []
+    viewerGroups: []
+    git:
+      provider: github
+      branch: master
+      repository: vdhiman0810/MS_Fabric
   - name: ws-npw-data-dev
     domain: data
     environment: dev
     description: Data engineering and lakehouse development workspace
+    ownerGroup: sg-fabric-data-engineers
+    adminGroups:
+      - sg-fabric-data-engineers
+      - sg-fabric-platform-engineers
+      - sg-fabric-admins
+    contributorGroups: []
+    viewerGroups: []
+    git:
+      provider: github
+      branch: master
+      repository: vdhiman0810/MS_Fabric
   - name: ws-npw-bi-dev
     domain: bi
     environment: dev
     description: Semantic model and reporting development workspace
+    ownerGroup: sg-fabric-bi-developers
+    adminGroups:
+      - sg-fabric-bi-developers
+      - sg-fabric-platform-engineers
+      - sg-fabric-admins
+    contributorGroups: []
+    viewerGroups: []
+    git:
+      provider: github
+      branch: master
+      repository: vdhiman0810/MS_Fabric
 deploymentPipelines:
   - name: dp-npw-platform
     stages:
       - dev
       - tst
       - prd
-

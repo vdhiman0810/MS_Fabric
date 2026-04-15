@@ -152,6 +152,14 @@ These narrower groups are used when different service principals need different 
 | Automation approval | Group | approved non-human identities at the tenant boundary |
 | Automation execution | Service principal plus scoped group | specific API, deployment, monitoring, or workspace actions |
 
+## Workspace Ownership Baseline
+
+| Workspace | Owner Group | Initial Admin Groups | Notes |
+|---|---|---|---|
+| `ws-npw-platform-dev` | `sg-fabric-platform-engineers` | `sg-fabric-platform-engineers`, `sg-fabric-admins` | platform automation and administration workspace |
+| `ws-npw-data-dev` | `sg-fabric-data-engineers` | `sg-fabric-data-engineers`, `sg-fabric-platform-engineers`, `sg-fabric-admins` | engineering workspace for pipelines, notebooks, and lakehouse assets |
+| `ws-npw-bi-dev` | `sg-fabric-bi-developers` | `sg-fabric-bi-developers`, `sg-fabric-platform-engineers`, `sg-fabric-admins` | semantic models, reports, and analytics delivery |
+
 ## Test User Strategy
 
 For lab exercises, create test users with:
