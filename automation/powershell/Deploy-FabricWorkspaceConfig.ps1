@@ -78,15 +78,27 @@ function Ensure-FabricWorkspace {
         description = $Config.description
     }
 
-    & $InvokeScript `
-        -Method POST `
-        -Uri "https://api.fabric.microsoft.com/v1/workspaces" `
-        -Body $body | Out-Null
+    try {
+        & $InvokeScript `
+            -Method POST `
+            -Uri "https://api.fabric.microsoft.com/v1/workspaces" `
+            -Body $body | Out-Null
+    }
+    catch {
+        $errorText = $_.ToString()
+
+        if ($errorText -match "WorkspaceNameAlreadyExists") {
+            Write-Host "Workspace already exists according to Fabric create response, re-querying: $($Config.name)"
+        }
+        else {
+            throw
+        }
+    }
 
     $createdWorkspace = Get-FabricWorkspaceByName -InvokeScript $InvokeScript -WorkspaceName $Config.name
 
     if ($null -eq $createdWorkspace) {
-        throw "Workspace '$($Config.name)' was created but could not be retrieved afterward."
+        throw "Workspace '$($Config.name)' exists or was created, but could not be retrieved afterward."
     }
 
     $createdWorkspace
