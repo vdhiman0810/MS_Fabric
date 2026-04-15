@@ -1,0 +1,533 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+2 0 obj
+<< /Length 2391 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+(# Microsoft Fabric Learning Plan) Tj
+T* () Tj
+T* (## Purpose) Tj
+T* () Tj
+T* (This document is the master learning and implementation plan for building a Microsoft Fabric ) Tj
+T* (platform from zero to production-ready maturity using an enterprise-minded, automation-first ) Tj
+T* (approach.) Tj
+T* () Tj
+T* (## Delivery Principles) Tj
+T* () Tj
+T* (- CI/CD first) Tj
+T* (- CLI second) Tj
+T* (- Portal only as the last option) Tj
+T* (- all non-secret platform artifacts belong in source control) Tj
+T* (- prefer repeatable automation over one-time manual configuration) Tj
+T* () Tj
+T* (## Project Scenario) Tj
+T* () Tj
+T* (Northwind Unified Commerce is the reference platform used across the program. The business ) Tj
+T* (needs a modern analytics platform for:) Tj
+T* () Tj
+T* (- batch sales, inventory, ERP, and supplier data) Tj
+T* (- near-real-time e-commerce and store telemetry) Tj
+T* (- governed semantic models and Power BI reporting) Tj
+T* (- platform administration, security, governance, and day-2 operations) Tj
+T* () Tj
+T* (## Assumptions) Tj
+T* () Tj
+T* (- tenant region target is Canada Central unless a different region is required) Tj
+T* (- learning begins on a Fabric trial and later transitions to paid capacity) Tj
+T* (- Azure DevOps is the preferred Git and CI/CD platform for enterprise alignment) Tj
+T* (- Microsoft Entra ID groups are used for access management) Tj
+T* () Tj
+T* (## Trial Constraints) Tj
+T* () Tj
+T* (- Fabric trial is time-limited and should be treated as a learning environment, not a ) Tj
+T* (production endpoint) Tj
+T* (- trial capacity does not represent the full enterprise networking posture) Tj
+T* (- some advanced capabilities are limited or unavailable in trial) Tj
+T* (- portal onboarding is still required for some initial activation tasks) Tj
+T* () Tj
+T* (## Target Architecture) Tj
+T* () Tj
+T* (### Logical Flow) Tj
+T* () Tj
+T* (1. Source systems land data into Fabric through pipelines, notebooks, and event ingestion.) Tj
+T* (2. Raw data lands in OneLake bronze.) Tj
+T* (3. Standardized transformations produce silver.) Tj
+T* (4. Curated gold data supports analytics and serving layers.) Tj
+T* (5. Lakehouse and Warehouse assets support data engineering and SQL-oriented access.) Tj
+T* (6. Semantic models expose governed business metrics.) Tj
+T* (7. Reports and dashboards serve business consumers.) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 1685 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+(8. Real-time analytics workloads cover telemetry and event use cases.) Tj
+T* () Tj
+T* (### Core Platform Components) Tj
+T* () Tj
+T* (- OneLake) Tj
+T* (- Lakehouse) Tj
+T* (- Warehouse) Tj
+T* (- Pipelines) Tj
+T* (- Notebooks) Tj
+T* (- Eventstream) Tj
+T* (- KQL or Real-Time Intelligence assets where available) Tj
+T* (- Semantic models) Tj
+T* (- Reports and dashboards) Tj
+T* (- deployment pipelines) Tj
+T* (- Git integration) Tj
+T* () Tj
+T* (## Operating Model) Tj
+T* () Tj
+T* (### Environment Strategy) Tj
+T* () Tj
+T* (- dev for engineering and experimentation) Tj
+T* (- tst for integration and release validation) Tj
+T* (- prd for controlled production use) Tj
+T* () Tj
+T* (### Workspace Strategy) Tj
+T* () Tj
+T* (- `ws-npw-platform-{env}`) Tj
+T* (- `ws-npw-data-{env}`) Tj
+T* (- `ws-npw-bi-{env}`) Tj
+T* () Tj
+T* (In trial, the physical topology may be simplified, but the target design remains separated by ) Tj
+T* (ownership and lifecycle.) Tj
+T* () Tj
+T* (### Administration Model) Tj
+T* () Tj
+T* (- Fabric admins own tenant settings and tenant-wide controls) Tj
+T* (- capacity admins own scale, monitoring, and workload behavior) Tj
+T* (- platform engineers own automation, workspace lifecycle, and guardrails) Tj
+T* (- domain or data product owners own business-aligned assets) Tj
+T* () Tj
+T* (### Identity Model) Tj
+T* () Tj
+T* (- `sg-fabric-admins`) Tj
+T* (- `sg-fabric-capacity-admins`) Tj
+T* (- `sg-fabric-platform-engineers`) Tj
+T* (- `sg-fabric-data-engineers`) Tj
+T* (- `sg-fabric-bi-developers`) Tj
+T* (- `sg-fabric-consumers`) Tj
+T* (- `sg-fabric-breakglass`) Tj
+T* (- `sg-fabric-automation-sp`) Tj
+T* () Tj
+T* (### Governance Model) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1839 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+() Tj
+T* (- domains aligned to business capabilities, not tools) Tj
+T* (- naming standards and ownership metadata required) Tj
+T* (- endorsement, certification, and discoverability are designed early) Tj
+T* (- lineage and auditability are part of platform design, not afterthoughts) Tj
+T* () Tj
+T* (### Security Model) Tj
+T* () Tj
+T* (- least privilege) Tj
+T* (- group-based access) Tj
+T* (- sensitivity labels where appropriate) Tj
+T* (- RLS and OLS on semantic models where required) Tj
+T* (- service principal access tightly scoped and allow-listed) Tj
+T* (- no secrets stored in source control) Tj
+T* () Tj
+T* (### Networking Model) Tj
+T* () Tj
+T* (- learning mode uses public SaaS access where trial requires it) Tj
+T* (- production target uses Private Link for client-to-Fabric access where supported) Tj
+T* (- managed private endpoints and adjacent Azure services are used for source connectivity where ) Tj
+T* (supported) Tj
+T* (- gateway patterns are documented for hybrid access when relevant) Tj
+T* () Tj
+T* (## Phased Roadmap) Tj
+T* () Tj
+T* (### Phase 0: Program Foundation) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Define naming, branching, repo standards, architecture decisions, and a risk register before ) Tj
+T* (workload creation begins.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- repo structure) Tj
+T* (- delivery principles) Tj
+T* (- naming conventions) Tj
+T* (- initial backlog, risks, and technical debt logs) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- CLI) Tj
+T* () Tj
+T* (### Phase 1: Tenant, Admin, Identity, and Automation Baseline) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Stand up the Fabric learning environment foundation and establish repeatable platform ) Tj
+T* (engineering practices.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- trial onboarding) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 1483 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+(- tenant settings baseline) Tj
+T* (- Entra groups) Tj
+T* (- workspace strategy) Tj
+T* (- Git strategy) Tj
+T* (- first Fabric REST automation) Tj
+T* (- CI/CD starter pipeline) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- Portal for trial onboarding) Tj
+T* (- CLI for groups and API execution) Tj
+T* (- CI/CD for repo and pipeline foundations) Tj
+T* () Tj
+T* (### Phase 2: Workspace and Release Foundation) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Provision workspaces, connect development workspaces to Git, and establish deployment pipeline ) Tj
+T* (scaffolding.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- dev workspaces) Tj
+T* (- Git-connected workspaces) Tj
+T* (- deployment pipeline structure) Tj
+T* (- environment parameter strategy) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CLI) Tj
+T* (- CI/CD) Tj
+T* () Tj
+T* (### Phase 3: OneLake and Core Data Platform Foundation) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Create the initial medallion-aligned data platform structure in Fabric.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- Lakehouse foundation) Tj
+T* (- bronze, silver, gold layout) Tj
+T* (- first Warehouse or SQL-serving layer) Tj
+T* (- shortcut strategy where needed) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- CLI) Tj
+T* () Tj
+T* (### Phase 4: Batch Ingestion and Orchestration) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Bring source data into Fabric through controlled, repeatable ingestion patterns.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1422 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+() Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- source landing patterns) Tj
+T* (- pipelines) Tj
+T* (- batch ingestion runbooks) Tj
+T* (- initial monitoring checks) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- CLI) Tj
+T* () Tj
+T* (### Phase 5: Transformation, Incremental Loads, and Data Quality) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Implement engineering logic, quality gates, and sustainable refresh patterns.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- notebook or pipeline-based transformations) Tj
+T* (- incremental processing logic) Tj
+T* (- quality checks and failure handling) Tj
+T* (- medallion promotion logic) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- CLI) Tj
+T* () Tj
+T* (### Phase 6: Semantic Models, Security, and Reporting) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Deliver business-facing analytics with governed access and reusable metrics.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- semantic models) Tj
+T* (- RLS and OLS where needed) Tj
+T* (- curated measures) Tj
+T* (- reports and dashboards) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- Portal fallback where certain report authoring workflows are not fully automated) Tj
+T* () Tj
+T* (### Phase 7: Real-Time Analytics) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Add streaming or near-real-time capabilities for telemetry and event-based use cases.) Tj
+T* () Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 1448 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+(Key outputs:) Tj
+T* () Tj
+T* (- event ingestion pattern) Tj
+T* (- KQL or real-time analytics assets) Tj
+T* (- operational dashboards for telemetry) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- CLI) Tj
+T* () Tj
+T* (### Phase 8: Governance and Catalog Maturity) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Make the platform discoverable, auditable, and manageable at scale.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- domains) Tj
+T* (- endorsement and certification model) Tj
+T* (- metadata standards) Tj
+T* (- ownership and stewardship mapping) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CLI where supported) Tj
+T* (- Portal fallback for experiences without full automation coverage) Tj
+T* () Tj
+T* (### Phase 9: Security Hardening and Network Maturity) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Move from learning-safe patterns to stronger enterprise controls.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- target private connectivity design) Tj
+T* (- exfiltration risk reduction approach) Tj
+T* (- secrets and identity hardening) Tj
+T* (- logging and incident response hooks) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CLI) Tj
+T* (- Portal) Tj
+T* (- adjacent Azure service integration) Tj
+T* () Tj
+T* (### Phase 10: Capacity, Performance, and Operations) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Prepare the platform for sustained production operations.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 1683 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+() Tj
+T* (- capacity strategy) Tj
+T* (- performance monitoring) Tj
+T* (- alerting and runbooks) Tj
+T* (- support model and incident triage patterns) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CLI) Tj
+T* (- Portal fallback) Tj
+T* () Tj
+T* (### Phase 11: Production Readiness and Transition) Tj
+T* () Tj
+T* (Objective:) Tj
+T* (Validate that the platform can move from trial-era learning mode into a controlled enterprise ) Tj
+T* (delivery model.) Tj
+T* () Tj
+T* (Key outputs:) Tj
+T* () Tj
+T* (- production readiness checklist) Tj
+T* (- migration actions from trial to paid capacity) Tj
+T* (- remaining technical debt review) Tj
+T* (- platform operating model sign-off) Tj
+T* () Tj
+T* (Primary methods:) Tj
+T* () Tj
+T* (- CI/CD) Tj
+T* (- CLI) Tj
+T* (- controlled Portal actions where unavoidable) Tj
+T* () Tj
+T* (## Current Backlog) Tj
+T* () Tj
+T* (- create remote Git repository) Tj
+T* (- make first commit and push baseline) Tj
+T* (- activate or verify Fabric trial) Tj
+T* (- create Entra groups) Tj
+T* (- capture Fabric tenant settings) Tj
+T* (- create the first development workspace) Tj
+T* (- validate service principal access for Fabric APIs) Tj
+T* (- connect workspace to Git) Tj
+T* (- create deployment pipeline shell) Tj
+T* () Tj
+T* (## Risks and Tradeoffs) Tj
+T* () Tj
+T* (- trial capacity expires) Tj
+T* (- trial networking does not represent full production capability) Tj
+T* (- some APIs are preview and should be used carefully) Tj
+T* (- portal steps still exist in parts of Fabric administration) Tj
+T* (- simplified trial topology may diverge from target enterprise topology) Tj
+T* () Tj
+T* (## Source Control Policy) Tj
+T* () Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 830 >>
+stream
+BT
+/F1 10 Tf
+54 738 Td
+13 TL
+(Always store:) Tj
+T* () Tj
+T* (- manifests) Tj
+T* (- scripts) Tj
+T* (- pipeline YAML) Tj
+T* (- standards and decisions) Tj
+T* (- risk and technical debt logs) Tj
+T* (- runbooks and validation steps) Tj
+T* () Tj
+T* (Never store:) Tj
+T* () Tj
+T* (- access tokens) Tj
+T* (- client secrets) Tj
+T* (- certificate private keys) Tj
+T* (- plaintext credentials) Tj
+T* () Tj
+T* (## What Success Looks Like) Tj
+T* () Tj
+T* (At the end of this journey, the platform should demonstrate:) Tj
+T* () Tj
+T* (- repeatable deployment foundations) Tj
+T* (- governed environments and workspaces) Tj
+T* (- secure, auditable access patterns) Tj
+T* (- end-to-end data ingestion and transformation) Tj
+T* (- governed analytics and reporting) Tj
+T* (- operational readiness for monitoring, support, and growth) Tj
+T* () Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Type /Pages /Kids [ 3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R ] /Count 8 >>
+endobj
+19 0 obj
+<< /Type /Catalog /Pages 18 0 R >>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000002526 00000 n 
+0000002653 00000 n 
+0000004390 00000 n 
+0000004517 00000 n 
+0000006408 00000 n 
+0000006535 00000 n 
+0000008070 00000 n 
+0000008197 00000 n 
+0000009672 00000 n 
+0000009801 00000 n 
+0000011302 00000 n 
+0000011431 00000 n 
+0000013167 00000 n 
+0000013296 00000 n 
+0000014178 00000 n 
+0000014307 00000 n 
+0000014413 00000 n 
+trailer
+<< /Size 20 /Root 19 0 R >>
+startxref
+14464
+%%EOF

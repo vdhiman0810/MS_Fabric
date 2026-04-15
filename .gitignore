@@ -1,0 +1,14 @@
+.DS_Store
+.idea/
+.vscode/
+bin/
+obj/
+out/
+dist/
+node_modules/
+*.user
+*.suo
+*.tmp
+*.log
+coverage/
+

@@ -1,0 +1,12 @@
+project: northwind-platform
+environment: prd
+tenantMode: target-enterprise
+region: canada-central
+workspacePattern: "ws-npw-{domain}-prd"
+git:
+  provider: azureDevOps
+  branch: main
+capacity:
+  type: dedicated
+  targetSku: F8-or-higher
+

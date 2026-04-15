@@ -1,0 +1,21 @@
+project: npw
+workspaces:
+  - name: ws-npw-platform-dev
+    domain: platform
+    environment: dev
+    description: Platform engineering and admin automation workspace
+  - name: ws-npw-data-dev
+    domain: data
+    environment: dev
+    description: Data engineering and lakehouse development workspace
+  - name: ws-npw-bi-dev
+    domain: bi
+    environment: dev
+    description: Semantic model and reporting development workspace
+deploymentPipelines:
+  - name: dp-npw-platform
+    stages:
+      - dev
+      - tst
+      - prd
+
