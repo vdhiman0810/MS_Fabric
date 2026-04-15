@@ -1,0 +1,1082 @@
+﻿[
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1001",
+        "on_hand_quantity":  32,
+        "reorder_threshold":  13,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1002",
+        "on_hand_quantity":  39,
+        "reorder_threshold":  16,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1003",
+        "on_hand_quantity":  46,
+        "reorder_threshold":  19,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1004",
+        "on_hand_quantity":  53,
+        "reorder_threshold":  22,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1005",
+        "on_hand_quantity":  60,
+        "reorder_threshold":  25,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1006",
+        "on_hand_quantity":  67,
+        "reorder_threshold":  28,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1007",
+        "on_hand_quantity":  74,
+        "reorder_threshold":  31,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1008",
+        "on_hand_quantity":  81,
+        "reorder_threshold":  34,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1001",
+        "on_hand_quantity":  88,
+        "reorder_threshold":  37,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1002",
+        "on_hand_quantity":  95,
+        "reorder_threshold":  40,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1003",
+        "on_hand_quantity":  102,
+        "reorder_threshold":  43,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1004",
+        "on_hand_quantity":  109,
+        "reorder_threshold":  46,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1005",
+        "on_hand_quantity":  116,
+        "reorder_threshold":  49,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1006",
+        "on_hand_quantity":  123,
+        "reorder_threshold":  52,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1007",
+        "on_hand_quantity":  130,
+        "reorder_threshold":  55,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1008",
+        "on_hand_quantity":  137,
+        "reorder_threshold":  58,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1001",
+        "on_hand_quantity":  144,
+        "reorder_threshold":  61,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1002",
+        "on_hand_quantity":  151,
+        "reorder_threshold":  64,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1003",
+        "on_hand_quantity":  158,
+        "reorder_threshold":  12,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1004",
+        "on_hand_quantity":  165,
+        "reorder_threshold":  15,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1005",
+        "on_hand_quantity":  172,
+        "reorder_threshold":  18,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1006",
+        "on_hand_quantity":  179,
+        "reorder_threshold":  21,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1007",
+        "on_hand_quantity":  186,
+        "reorder_threshold":  24,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1008",
+        "on_hand_quantity":  193,
+        "reorder_threshold":  27,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1001",
+        "on_hand_quantity":  200,
+        "reorder_threshold":  30,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1002",
+        "on_hand_quantity":  207,
+        "reorder_threshold":  33,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1003",
+        "on_hand_quantity":  214,
+        "reorder_threshold":  36,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1004",
+        "on_hand_quantity":  221,
+        "reorder_threshold":  39,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1005",
+        "on_hand_quantity":  228,
+        "reorder_threshold":  42,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1006",
+        "on_hand_quantity":  235,
+        "reorder_threshold":  45,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1007",
+        "on_hand_quantity":  242,
+        "reorder_threshold":  48,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1008",
+        "on_hand_quantity":  29,
+        "reorder_threshold":  51,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1001",
+        "on_hand_quantity":  36,
+        "reorder_threshold":  54,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1002",
+        "on_hand_quantity":  43,
+        "reorder_threshold":  57,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1003",
+        "on_hand_quantity":  50,
+        "reorder_threshold":  60,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1004",
+        "on_hand_quantity":  57,
+        "reorder_threshold":  63,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1005",
+        "on_hand_quantity":  64,
+        "reorder_threshold":  11,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1006",
+        "on_hand_quantity":  71,
+        "reorder_threshold":  14,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1007",
+        "on_hand_quantity":  78,
+        "reorder_threshold":  17,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1008",
+        "on_hand_quantity":  85,
+        "reorder_threshold":  20,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1001",
+        "on_hand_quantity":  92,
+        "reorder_threshold":  23,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1002",
+        "on_hand_quantity":  99,
+        "reorder_threshold":  26,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1003",
+        "on_hand_quantity":  106,
+        "reorder_threshold":  29,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1004",
+        "on_hand_quantity":  113,
+        "reorder_threshold":  32,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1005",
+        "on_hand_quantity":  120,
+        "reorder_threshold":  35,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1006",
+        "on_hand_quantity":  127,
+        "reorder_threshold":  38,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1007",
+        "on_hand_quantity":  134,
+        "reorder_threshold":  41,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1008",
+        "on_hand_quantity":  141,
+        "reorder_threshold":  44,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1001",
+        "on_hand_quantity":  148,
+        "reorder_threshold":  47,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1002",
+        "on_hand_quantity":  155,
+        "reorder_threshold":  50,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1003",
+        "on_hand_quantity":  162,
+        "reorder_threshold":  53,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1004",
+        "on_hand_quantity":  169,
+        "reorder_threshold":  56,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1005",
+        "on_hand_quantity":  176,
+        "reorder_threshold":  59,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1006",
+        "on_hand_quantity":  183,
+        "reorder_threshold":  62,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1007",
+        "on_hand_quantity":  190,
+        "reorder_threshold":  10,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1008",
+        "on_hand_quantity":  197,
+        "reorder_threshold":  13,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1001",
+        "on_hand_quantity":  204,
+        "reorder_threshold":  16,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1002",
+        "on_hand_quantity":  211,
+        "reorder_threshold":  19,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1003",
+        "on_hand_quantity":  218,
+        "reorder_threshold":  22,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1004",
+        "on_hand_quantity":  225,
+        "reorder_threshold":  25,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1005",
+        "on_hand_quantity":  232,
+        "reorder_threshold":  28,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1006",
+        "on_hand_quantity":  239,
+        "reorder_threshold":  31,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1007",
+        "on_hand_quantity":  26,
+        "reorder_threshold":  34,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1008",
+        "on_hand_quantity":  33,
+        "reorder_threshold":  37,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1001",
+        "on_hand_quantity":  40,
+        "reorder_threshold":  40,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1002",
+        "on_hand_quantity":  47,
+        "reorder_threshold":  43,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1003",
+        "on_hand_quantity":  54,
+        "reorder_threshold":  46,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1004",
+        "on_hand_quantity":  61,
+        "reorder_threshold":  49,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1005",
+        "on_hand_quantity":  68,
+        "reorder_threshold":  52,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1006",
+        "on_hand_quantity":  75,
+        "reorder_threshold":  55,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1007",
+        "on_hand_quantity":  82,
+        "reorder_threshold":  58,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1008",
+        "on_hand_quantity":  89,
+        "reorder_threshold":  61,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1001",
+        "on_hand_quantity":  96,
+        "reorder_threshold":  64,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1002",
+        "on_hand_quantity":  103,
+        "reorder_threshold":  12,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1003",
+        "on_hand_quantity":  110,
+        "reorder_threshold":  15,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1004",
+        "on_hand_quantity":  117,
+        "reorder_threshold":  18,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1005",
+        "on_hand_quantity":  124,
+        "reorder_threshold":  21,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1006",
+        "on_hand_quantity":  131,
+        "reorder_threshold":  24,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1007",
+        "on_hand_quantity":  138,
+        "reorder_threshold":  27,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1008",
+        "on_hand_quantity":  145,
+        "reorder_threshold":  30,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1001",
+        "on_hand_quantity":  152,
+        "reorder_threshold":  33,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1002",
+        "on_hand_quantity":  159,
+        "reorder_threshold":  36,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1003",
+        "on_hand_quantity":  166,
+        "reorder_threshold":  39,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1004",
+        "on_hand_quantity":  173,
+        "reorder_threshold":  42,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1005",
+        "on_hand_quantity":  180,
+        "reorder_threshold":  45,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1006",
+        "on_hand_quantity":  187,
+        "reorder_threshold":  48,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1007",
+        "on_hand_quantity":  194,
+        "reorder_threshold":  51,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1008",
+        "on_hand_quantity":  201,
+        "reorder_threshold":  54,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1001",
+        "on_hand_quantity":  208,
+        "reorder_threshold":  57,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1002",
+        "on_hand_quantity":  215,
+        "reorder_threshold":  60,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1003",
+        "on_hand_quantity":  222,
+        "reorder_threshold":  63,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1004",
+        "on_hand_quantity":  229,
+        "reorder_threshold":  11,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1005",
+        "on_hand_quantity":  236,
+        "reorder_threshold":  14,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1006",
+        "on_hand_quantity":  243,
+        "reorder_threshold":  17,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1007",
+        "on_hand_quantity":  30,
+        "reorder_threshold":  20,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1008",
+        "on_hand_quantity":  37,
+        "reorder_threshold":  23,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1001",
+        "on_hand_quantity":  44,
+        "reorder_threshold":  26,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1002",
+        "on_hand_quantity":  51,
+        "reorder_threshold":  29,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1003",
+        "on_hand_quantity":  58,
+        "reorder_threshold":  32,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1004",
+        "on_hand_quantity":  65,
+        "reorder_threshold":  35,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1005",
+        "on_hand_quantity":  72,
+        "reorder_threshold":  38,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1006",
+        "on_hand_quantity":  79,
+        "reorder_threshold":  41,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1007",
+        "on_hand_quantity":  86,
+        "reorder_threshold":  44,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1008",
+        "on_hand_quantity":  93,
+        "reorder_threshold":  47,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1001",
+        "on_hand_quantity":  100,
+        "reorder_threshold":  50,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  101,
+        "product_id":  "P1002",
+        "on_hand_quantity":  107,
+        "reorder_threshold":  53,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  102,
+        "product_id":  "P1003",
+        "on_hand_quantity":  114,
+        "reorder_threshold":  56,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  103,
+        "product_id":  "P1004",
+        "on_hand_quantity":  121,
+        "reorder_threshold":  59,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  104,
+        "product_id":  "P1005",
+        "on_hand_quantity":  128,
+        "reorder_threshold":  62,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A01"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  105,
+        "product_id":  "P1006",
+        "on_hand_quantity":  135,
+        "reorder_threshold":  10,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A02"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  106,
+        "product_id":  "P1007",
+        "on_hand_quantity":  142,
+        "reorder_threshold":  13,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A03"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  107,
+        "product_id":  "P1008",
+        "on_hand_quantity":  149,
+        "reorder_threshold":  16,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A04"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  108,
+        "product_id":  "P1001",
+        "on_hand_quantity":  156,
+        "reorder_threshold":  19,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A05"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  109,
+        "product_id":  "P1002",
+        "on_hand_quantity":  163,
+        "reorder_threshold":  22,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A06"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  110,
+        "product_id":  "P1003",
+        "on_hand_quantity":  170,
+        "reorder_threshold":  25,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A07"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  111,
+        "product_id":  "P1004",
+        "on_hand_quantity":  177,
+        "reorder_threshold":  28,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A08"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  112,
+        "product_id":  "P1005",
+        "on_hand_quantity":  184,
+        "reorder_threshold":  31,
+        "warehouse_id":  "W01",
+        "aisle_code":  "A09"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  113,
+        "product_id":  "P1006",
+        "on_hand_quantity":  191,
+        "reorder_threshold":  34,
+        "warehouse_id":  "W02",
+        "aisle_code":  "A10"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  114,
+        "product_id":  "P1007",
+        "on_hand_quantity":  198,
+        "reorder_threshold":  37,
+        "warehouse_id":  "W03",
+        "aisle_code":  "A11"
+    },
+    {
+        "snapshot_date":  "2026-04-15",
+        "store_id":  115,
+        "product_id":  "P1008",
+        "on_hand_quantity":  205,
+        "reorder_threshold":  40,
+        "warehouse_id":  "W04",
+        "aisle_code":  "A12"
+    }
+]

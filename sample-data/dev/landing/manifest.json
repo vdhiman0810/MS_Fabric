@@ -1,0 +1,35 @@
+{
+  "environment": "dev",
+  "landingRoot": "landing",
+  "sources": [
+    {
+      "sourceSystem": "pos",
+      "dataset": "daily_sales",
+      "format": "csv",
+      "files": [
+        "pos_daily_sales_2026_04_15.csv",
+        "pos_daily_sales_2026_04_16.csv"
+      ],
+      "targetFolder": "landing/pos/daily_sales"
+    },
+    {
+      "sourceSystem": "inventory",
+      "dataset": "snapshot",
+      "format": "json",
+      "files": [
+        "inventory_snapshot_2026_04_15.json"
+      ],
+      "targetFolder": "landing/inventory/snapshot"
+    },
+    {
+      "sourceSystem": "suppliers",
+      "dataset": "master",
+      "format": "json",
+      "files": [
+        "suppliers_master_2026_04_15.json"
+      ],
+      "targetFolder": "landing/suppliers/master"
+    }
+  ]
+}
+

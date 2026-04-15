@@ -23,6 +23,7 @@ Phase 1 establishes the platform foundation:
 - `docs/`: architecture, governance, security, operations
 - `platform/`: naming, environments, workspace configs, tenant settings baselines
 - `automation/`: PowerShell scripts and REST helpers
+- `sample-data/`: source-controlled CSV and JSON data packs for ingestion labs
 - `backlog/`: roadmap, risks, and technical debt
 
 ## Phase 1 Hands-On Flow
