@@ -38,36 +38,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up PowerShell
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Validate JSON config files
+      - name: Validate workspace configs
         shell: pwsh
         run: |
-          $configPath = Join-Path $PWD "platform/workspaces/${{ github.event.inputs.environment || 'dev' }}"
-          if (-not (Test-Path $configPath)) {
-            throw "Workspace config directory not found: $configPath"
-          }
-
-          $files = Get-ChildItem -Path $configPath -Filter *.json
-          if (-not $files) {
-            throw "No workspace config files were found in $configPath"
-          }
-
-          foreach ($file in $files) {
-            Write-Host "Validating $($file.Name)"
-            $config = Get-Content -LiteralPath $file.FullName | ConvertFrom-Json
-
-            foreach ($required in @("name", "description", "ownerGroup", "roles")) {
-              if (-not $config.PSObject.Properties[$required]) {
-                throw "Missing required property '$required' in $($file.Name)"
-              }
-            }
-          }
-
-          Write-Host "Workspace config validation passed."
+          ./automation/powershell/Test-FabricWorkspaceConfigs.ps1 -ConfigDirectory "platform/workspaces/${{ github.event.inputs.environment || 'dev' }}"
 
   deploy:
     name: Deploy Workspace Configs
@@ -96,4 +70,3 @@ jobs:
         shell: pwsh
         run: |
           ./automation/powershell/Deploy-FabricWorkspaceConfigs.ps1 -ConfigDirectory $env:FABRIC_CONFIG_DIRECTORY
-
