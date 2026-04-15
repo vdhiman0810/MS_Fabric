@@ -1,0 +1,22 @@
+{
+  "name": "ws-npw-bi-dev",
+  "domain": "bi",
+  "environment": "dev",
+  "description": "BI workspace for semantic models, reports, and analytics delivery",
+  "ownerGroup": "sg-fabric-bi-developers",
+  "roles": {
+    "Admin": [
+      "sg-fabric-bi-developers",
+      "sg-fabric-platform-engineers",
+      "sg-fabric-admins"
+    ],
+    "Contributor": [],
+    "Viewer": []
+  },
+  "git": {
+    "provider": "github",
+    "branch": "master",
+    "repository": "vdhiman0810/MS_Fabric"
+  }
+}
+

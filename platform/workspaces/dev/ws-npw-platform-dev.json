@@ -1,0 +1,21 @@
+{
+  "name": "ws-npw-platform-dev",
+  "domain": "platform",
+  "environment": "dev",
+  "description": "Platform engineering and admin automation workspace",
+  "ownerGroup": "sg-fabric-platform-engineers",
+  "roles": {
+    "Admin": [
+      "sg-fabric-platform-engineers",
+      "sg-fabric-admins"
+    ],
+    "Contributor": [],
+    "Viewer": []
+  },
+  "git": {
+    "provider": "github",
+    "branch": "master",
+    "repository": "vdhiman0810/MS_Fabric"
+  }
+}
+

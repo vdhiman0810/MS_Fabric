@@ -21,9 +21,8 @@ Phase 1 establishes the platform foundation:
 ## Repository Map
 
 - `docs/`: architecture, governance, security, operations
-- `platform/`: naming, environments, workspace manifests, tenant settings baselines
+- `platform/`: naming, environments, workspace configs, tenant settings baselines
 - `automation/`: PowerShell scripts and REST helpers
-- `cicd/`: Azure DevOps starter pipeline
 - `backlog/`: roadmap, risks, and technical debt
 
 ## Phase 1 Hands-On Flow
@@ -31,9 +30,9 @@ Phase 1 establishes the platform foundation:
 1. Complete Fabric trial onboarding in the portal.
 2. Create Entra security groups and the automation service principal.
 3. Capture current tenant settings into source control.
-4. Define environment manifests and workspace naming.
-5. Create the first Fabric workspace by REST API.
-6. Prepare Git integration and deployment pipeline automation.
+4. Define environment manifests, workspace naming, and per-workspace JSON configs.
+5. Use config-driven deployment for Fabric workspaces and role assignments.
+6. Prepare GitHub Actions based automation.
 
 ## Default Tenant Domain
 
@@ -53,3 +52,32 @@ Use `varundhiman08outlook.onmicrosoft.com` for tenant-scoped examples and test-u
 - client secrets
 - certificate private keys
 - ad hoc portal screenshots unless needed for runbooks
+
+## Workspace Deployment Pattern
+
+Workspace deployment is now config-driven:
+
+- one JSON file per workspace under `platform/workspaces/dev/`
+- `Deploy-FabricWorkspaceConfig.ps1` deploys one workspace from one config
+- `Deploy-FabricWorkspaceConfigs.ps1` deploys the full directory
+
+The scripts create missing workspaces, skip existing workspaces, assign group roles from config, and skip or update role assignments as needed.
+
+## Fallback Scripts
+
+The repo also keeps manual and fallback scripts for learning and troubleshooting:
+
+- `New-FabricWorkspace.ps1` for direct single-workspace creation
+- `Set-FabricWorkspaceAccessFromManifest.ps1` for YAML-manifest-based access reconciliation
+- `Get-EntraGroupId.ps1` for direct Entra group resolution
+
+The primary path remains JSON workspace configs plus GitHub Actions, but these scripts are intentionally retained as fallback options.
+
+## CI/CD Execution Pattern
+
+Workspace config deployment is designed to run from GitHub Actions through `.github/workflows/deploy-fabric-workspaces.yml`.
+
+- push to `master` validates workspace configs
+- manual workflow dispatch can run deployment
+- preferred authentication is GitHub OIDC with Azure login
+- full non-human workspace creation depends on the Fabric tenant setting that allows service principals to create workspaces

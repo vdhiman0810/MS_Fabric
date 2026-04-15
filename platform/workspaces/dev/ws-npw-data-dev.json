@@ -1,0 +1,22 @@
+{
+  "name": "ws-npw-data-dev",
+  "domain": "data",
+  "environment": "dev",
+  "description": "Data engineering workspace for lakehouse, pipelines, and notebooks",
+  "ownerGroup": "sg-fabric-data-engineers",
+  "roles": {
+    "Admin": [
+      "sg-fabric-data-engineers",
+      "sg-fabric-platform-engineers",
+      "sg-fabric-admins"
+    ],
+    "Contributor": [],
+    "Viewer": []
+  },
+  "git": {
+    "provider": "github",
+    "branch": "master",
+    "repository": "vdhiman0810/MS_Fabric"
+  }
+}
+
