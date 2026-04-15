@@ -8,7 +8,13 @@ $ErrorActionPreference = "Stop"
 
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $deployScript = Join-Path $scriptRoot "Deploy-FabricWorkspaceConfig.ps1"
-$resolvedDirectory = Resolve-Path -LiteralPath (Join-Path $scriptRoot $ConfigDirectory)
+$resolvedDirectory = if ([System.IO.Path]::IsPathRooted($ConfigDirectory)) {
+    Resolve-Path -LiteralPath $ConfigDirectory
+} elseif (Test-Path -LiteralPath $ConfigDirectory) {
+    Resolve-Path -LiteralPath $ConfigDirectory
+} else {
+    Resolve-Path -LiteralPath (Join-Path $scriptRoot $ConfigDirectory)
+}
 
 $configFiles = Get-ChildItem -LiteralPath $resolvedDirectory -Filter *.json | Sort-Object Name
 
@@ -22,4 +28,3 @@ foreach ($configFile in $configFiles) {
 }
 
 Write-Host "Workspace config deployment batch complete."
-
