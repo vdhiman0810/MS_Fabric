@@ -1,8 +1,8 @@
 trigger:
-- main
+- master
 
 pr:
-- main
+- master
 
 pool:
   vmImage: ubuntu-latest
@@ -55,4 +55,3 @@ stages:
         inlineScript: |
           Write-Host "Replace this placeholder with Fabric REST API bootstrap steps."
           Write-Host "Expected actions: capture tenant baseline, create workspaces, and initialize deployment scaffolding."
-

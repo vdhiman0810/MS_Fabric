@@ -25,8 +25,9 @@ Northwind Unified Commerce is the reference platform used across the program. Th
 
 - tenant region target is Canada Central unless a different region is required
 - learning begins on a Fabric trial and later transitions to paid capacity
-- Azure DevOps is the preferred Git and CI/CD platform for enterprise alignment
+- GitHub is the selected Git provider for this learning project
 - Microsoft Entra ID groups are used for access management
+- tenant domain is `varundhiman08outlook.onmicrosoft.com`
 
 ## Trial Constraints
 
@@ -378,4 +379,3 @@ At the end of this journey, the platform should demonstrate:
 - end-to-end data ingestion and transformation
 - governed analytics and reporting
 - operational readiness for monitoring, support, and growth
-

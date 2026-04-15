@@ -1,12 +1,12 @@
 project: northwind-platform
 environment: dev
 tenantMode: trial
+tenantDomain: varundhiman08outlook.onmicrosoft.com
 region: canada-central
 workspacePattern: "ws-npw-{domain}-dev"
 git:
-  provider: azureDevOps
-  branch: main
+  provider: github
+  branch: master
 capacity:
   type: trial
   targetSku: F2-or-higher-after-trial
-

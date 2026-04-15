@@ -11,4 +11,6 @@ node_modules/
 *.tmp
 *.log
 coverage/
-
+test-users-created.csv
+automation/powershell/test-users-created.csv
+*.credentials.csv

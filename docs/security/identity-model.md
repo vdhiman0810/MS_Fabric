@@ -16,13 +16,18 @@
 - `sg-fabric-bi-developers`
 - `sg-fabric-consumers`
 - `sg-fabric-breakglass`
-- `sg-fabric-automation-sp`
+- `sg-fabric-automation-approved-sp`
+- `sg-fabric-automation-api-readers-sp`
+- `sg-fabric-automation-workspace-admin-sp`
+- `sg-fabric-automation-deployment-sp`
+- `sg-fabric-automation-monitoring-sp`
 
 ## Service Principal Guidance
 
 - create one dedicated automation application registration
-- place its service principal in `sg-fabric-automation-sp`
-- allow that group in tenant settings for Fabric APIs and workspace or deployment pipeline creation where supported
+- place service principals into purpose-specific groups instead of one catch-all bucket
+- use `sg-fabric-automation-approved-sp` as the tenant-level allow-list boundary for approved automation identities
+- use narrower groups for specific automation scopes such as API read, workspace lifecycle, deployments, and monitoring
 - prefer certificate authentication over client secrets for enterprise production
 
 ## Break-Glass Guidance
@@ -30,4 +35,3 @@
 - keep break-glass membership empty during normal operations
 - use emergency accounts with strong controls and auditing
 - review access regularly
-

@@ -35,6 +35,10 @@ Phase 1 establishes the platform foundation:
 5. Create the first Fabric workspace by REST API.
 6. Prepare Git integration and deployment pipeline automation.
 
+## Default Tenant Domain
+
+Use `varundhiman08outlook.onmicrosoft.com` for tenant-scoped examples and test-user creation unless a later step explicitly says otherwise.
+
 ## What Goes In Source Control
 
 - manifests and standards
@@ -49,4 +53,3 @@ Phase 1 establishes the platform foundation:
 - client secrets
 - certificate private keys
 - ad hoc portal screenshots unless needed for runbooks
-

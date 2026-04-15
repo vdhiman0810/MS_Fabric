@@ -1,12 +1,12 @@
 project: northwind-platform
 environment: tst
 tenantMode: target-enterprise
+tenantDomain: varundhiman08outlook.onmicrosoft.com
 region: canada-central
 workspacePattern: "ws-npw-{domain}-tst"
 git:
-  provider: azureDevOps
-  branch: main
+  provider: github
+  branch: master
 capacity:
   type: dedicated
   targetSku: F4-or-higher
-

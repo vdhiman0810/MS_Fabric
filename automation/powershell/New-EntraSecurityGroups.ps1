@@ -14,7 +14,11 @@ $groups = @(
     "bi-developers",
     "consumers",
     "breakglass",
-    "automation-sp"
+    "automation-approved-sp",
+    "automation-api-readers-sp",
+    "automation-workspace-admin-sp",
+    "automation-deployment-sp",
+    "automation-monitoring-sp"
 )
 
 foreach ($group in $groups) {
