@@ -1,0 +1,137 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "DelimitedText",
+      "connectionSettings": {
+        "type": "AzureBlobFS",
+        "externalReferences": {
+          "connection": "99b08111-88fe-4423-9ec7-3b3aa89ea60f"
+        }
+      }
+    },
+    "destination": {
+      "type": "DelimitedText",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "ddb46a72-371b-ba87-4e42-b9573b185859",
+          "rootFolder": "Files"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00",
+      "retry": 0
+    }
+  },
+  "activities": [
+    {
+      "id": "3e79ce12-11dd-4fdc-b1e2-17cc786bdacb",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobFSLocation",
+              "fileName": "pos_daily_sales_2026_04_15.csv",
+              "folderPath": "landing/pos/daily_sales",
+              "fileSystem": "northwind-landing-dev"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+          },
+          "storeSettings": {
+            "recursive": true,
+            "enablePartitionDiscovery": false
+          },
+          "formatSettings": {}
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "LakehouseLocation",
+              "fileName": "pos_daily_sales_2026_04_15.csv",
+              "folderPath": "landing/pos/daily_sales"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+          },
+          "storeSettings": {
+            "copyBehavior": "PreserveHierarchy"
+          },
+          "formatSettings": {
+            "fileExtension": ".txt"
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "61f342bd-24b5-4287-92b8-2e0451fba899",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobFSLocation",
+              "fileName": "pos_daily_sales_2026_04_16.csv",
+              "folderPath": "landing/pos/daily_sales",
+              "fileSystem": "northwind-landing-dev"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+          },
+          "storeSettings": {
+            "recursive": true,
+            "enablePartitionDiscovery": false
+          },
+          "formatSettings": {}
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "LakehouseLocation",
+              "fileName": "pos_daily_sales_2026_04_16.csv",
+              "folderPath": "landing/pos/daily_sales"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+          },
+          "storeSettings": {
+            "copyBehavior": "PreserveHierarchy"
+          },
+          "formatSettings": {
+            "fileExtension": ".txt"
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    }
+  ]
+}
