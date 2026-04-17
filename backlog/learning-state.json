@@ -1,0 +1,142 @@
+﻿{
+    "project":  {
+                    "name":  "Microsoft Fabric Northwind Platform",
+                    "repo_root":  "C:\\Users\\varun\\OneDrive\\Documents\\MS_Fabric",
+                    "tenant_domain":  "varundhiman08outlook.onmicrosoft.com",
+                    "last_updated":  "2026-04-17",
+                    "current_machine_note":  "Use this file as the handoff checkpoint when resuming on another computer."
+                },
+    "progress":  {
+                     "overall_percent":  58,
+                     "current_phase":  "Phase 4",
+                     "current_phase_name":  "Semantic Modeling and Reporting",
+                     "current_phase_percent":  50,
+                     "status":  "in_progress"
+                 },
+    "full_roadmap":  [
+                         {
+                             "phase":  "Phase 0",
+                             "name":  "Program Foundation",
+                             "status":  "completed",
+                             "objective":  "Define naming, branching, repo standards, architecture decisions, and a risk register before workload creation begins."
+                         },
+                         {
+                             "phase":  "Phase 1",
+                             "name":  "Tenant, Admin, Identity, and Automation Baseline",
+                             "status":  "completed",
+                             "objective":  "Stand up the Fabric learning environment foundation and establish repeatable platform engineering practices."
+                         },
+                         {
+                             "phase":  "Phase 2",
+                             "name":  "Workspace and Release Foundation",
+                             "status":  "completed",
+                             "objective":  "Provision workspaces, connect development workspaces to Git, and establish deployment pipeline scaffolding."
+                         },
+                         {
+                             "phase":  "Phase 3",
+                             "name":  "OneLake and Core Data Platform Foundation",
+                             "status":  "completed",
+                             "objective":  "Create the initial medallion-aligned data platform structure in Fabric."
+                         },
+                         {
+                             "phase":  "Phase 4",
+                             "name":  "Batch Ingestion and Orchestration plus Initial BI Consumption",
+                             "status":  "in_progress",
+                             "objective":  "Bring source data into Fabric through repeatable ingestion patterns and continue current semantic model and report authoring milestone."
+                         },
+                         {
+                             "phase":  "Phase 5",
+                             "name":  "Transformation, Incremental Loads, and Data Quality",
+                             "status":  "not_started",
+                             "objective":  "Implement engineering logic, quality gates, and sustainable refresh patterns."
+                         },
+                         {
+                             "phase":  "Phase 6",
+                             "name":  "Semantic Models, Security, and Reporting Maturity",
+                             "status":  "not_started",
+                             "objective":  "Deliver business-facing analytics with governed access, reusable metrics, and security controls such as RLS and OLS."
+                         },
+                         {
+                             "phase":  "Phase 7",
+                             "name":  "Real-Time Analytics",
+                             "status":  "not_started",
+                             "objective":  "Add streaming or near-real-time capabilities for telemetry and event-based use cases."
+                         },
+                         {
+                             "phase":  "Phase 8",
+                             "name":  "Governance and Catalog Maturity",
+                             "status":  "not_started",
+                             "objective":  "Make the platform discoverable, auditable, and manageable at scale."
+                         },
+                         {
+                             "phase":  "Phase 9",
+                             "name":  "Security Hardening and Network Maturity",
+                             "status":  "not_started",
+                             "objective":  "Move from learning-safe patterns to stronger enterprise controls."
+                         },
+                         {
+                             "phase":  "Phase 10",
+                             "name":  "Capacity, Performance, and Operations",
+                             "status":  "not_started",
+                             "objective":  "Prepare the platform for sustained production operations."
+                         },
+                         {
+                             "phase":  "Phase 11",
+                             "name":  "Production Readiness and Transition",
+                             "status":  "not_started",
+                             "objective":  "Validate transition from trial-era learning mode into a controlled enterprise delivery model."
+                         }
+                     ],
+    "current_state":  {
+                          "completed":  [
+                                            "Phase 0 foundation and repo structure",
+                                            "Phase 1 tenant baseline, identity groups, Git and CI/CD foundation",
+                                            "Phase 2 config-driven workspace deployment through Fabric API and GitHub Actions",
+                                            "Phase 3 ingestion, medallion flow, Lakehouse, Warehouse, and SQL views",
+                                            "Semantic model sm_npw_sales_dev created"
+                                        ],
+                          "working_on":  [
+                                             "Power BI report authoring on top of sm_npw_sales_dev,First report layout and KPI visuals"
+                                         ],
+                          "next_steps":  [
+                                             "Add KPI cards for total sales and total transactions,Add a sale_date slicer,Clean up titles and save report as rpt_npw_sales_overview_dev"
+                                         ]
+                      },
+    "key_assets":  {
+                       "workspaces":  [
+                                          "ws-npw-platform-dev",
+                                          "ws-npw-data-dev",
+                                          "ws-npw-bi-dev"
+                                      ],
+                       "lakehouse":  "lh_npw_data_dev",
+                       "warehouse":  "wh_npw_data_dev",
+                       "semantic_model":  "sm_npw_sales_dev",
+                       "report":  "rpt_npw_sales_overview_dev",
+                       "warehouse_views":  [
+                                               "reporting.vw_gold_daily_sales_summary",
+                                               "reporting.vw_gold_daily_sales_by_store"
+                                           ]
+                   },
+    "resume_context":  {
+                           "open_this_plan_first":  "docs/architecture/fabric-learning-plan.md",
+                           "open_this_repo_guide_next":  "README.md",
+                           "open_this_state_updater_when_logging_progress":  "automation/powershell/Update-LearningState.ps1",
+                           "current_focus_area":  "Finish report authoring before moving to advanced semantic modeling, RLS, and BI governance."
+                       },
+    "environment_dependencies":  {
+                                     "github_repo":  "https://github.com/vdhiman0810/MS_Fabric.git",
+                                     "branch":  "master",
+                                     "preferred_local_path":  "C:\\Users\\varun\\OneDrive\\Documents\\MS_Fabric",
+                                     "notes":  [
+                                                   "GitHub OIDC and workspace deployment workflow are already configured.",
+                                                   "Do not store PATs, secrets, or passwords in source control.",
+                                                   "Some Fabric authoring steps are still portal/UI-driven because full automation is not available."
+                                               ]
+                                 },
+    "resume_checklist":  [
+                             "Clone repo to the same local path if possible.",
+                             "Open backlog/learning-state.json first.",
+                             "Review docs/architecture/fabric-learning-plan.md for roadmap context.",
+                             "Continue from the next_steps list unless a blocker or environment change requires revalidation."
+                         ]
+}

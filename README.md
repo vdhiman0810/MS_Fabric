@@ -26,6 +26,20 @@ Phase 1 establishes the platform foundation:
 - `sample-data/`: source-controlled CSV and JSON data packs for ingestion labs
 - `backlog/`: roadmap, risks, and technical debt
 
+## Resume State
+
+To continue this project on another computer, use the repo-native state file:
+
+- `backlog/learning-state.json`
+
+Resume guide:
+
+- `docs/operations/resume-on-new-computer.md`
+
+Helper script for updating progress:
+
+- `automation/powershell/Update-LearningState.ps1`
+
 ## Phase 1 Hands-On Flow
 
 1. Complete Fabric trial onboarding in the portal.
