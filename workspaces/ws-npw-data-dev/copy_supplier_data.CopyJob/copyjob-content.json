@@ -1,0 +1,65 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "Json",
+      "connectionSettings": {
+        "type": "AzureBlobFS",
+        "externalReferences": {
+          "connection": "99b08111-88fe-4423-9ec7-3b3aa89ea60f"
+        }
+      }
+    },
+    "destination": {
+      "type": "Json",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "ddb46a72-371b-ba87-4e42-b9573b185859",
+          "rootFolder": "Files"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00",
+      "retry": 0
+    }
+  },
+  "activities": [
+    {
+      "id": "a27b90b6-9958-4ae6-9f0f-9bc18528c754",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobFSLocation",
+              "fileName": "suppliers_master_2026_04_15.json",
+              "folderPath": "landing/suppliers/master",
+              "fileSystem": "northwind-landing-dev"
+            }
+          },
+          "storeSettings": {
+            "recursive": true,
+            "enablePartitionDiscovery": false
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "location": {
+              "type": "LakehouseLocation",
+              "folderPath": "landing/suppliers/master"
+            }
+          },
+          "storeSettings": {
+            "copyBehavior": "PreserveHierarchy"
+          },
+          "formatSettings": {},
+          "applyVOrder": false
+        },
+        "enableStaging": false
+      }
+    }
+  ]
+}

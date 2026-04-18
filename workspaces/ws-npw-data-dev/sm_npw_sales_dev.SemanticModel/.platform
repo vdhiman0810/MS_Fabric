@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "CopyJob",
-    "displayName": "copy_sales_data"
+    "type": "SemanticModel",
+    "displayName": "sm_npw_sales_dev"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "babcbd6a-824b-89bb-45ac-4a56e7e6aaa9"
+    "logicalId": "2475f784-340d-924b-4ac9-be7c901cd90a"
   }
 }

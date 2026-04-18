@@ -1,0 +1,259 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "vw_gold_daily_sales_by_store",
+        "sourceLineageTag": "[reporting].[vw_gold_daily_sales_by_store]",
+        "columns": [
+          {
+            "name": "store_id",
+            "dataType": "int64",
+            "sourceColumn": "store_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "store_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_transactions",
+            "dataType": "int64",
+            "sourceColumn": "total_transactions",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "total_transactions",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_quantity_sold",
+            "dataType": "int64",
+            "sourceColumn": "total_quantity_sold",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "total_quantity_sold",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_sales_amount",
+            "dataType": "double",
+            "sourceColumn": "total_sales_amount",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "total_sales_amount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "avg_unit_price",
+            "dataType": "double",
+            "sourceColumn": "avg_unit_price",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "avg_unit_price",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "vw_gold_daily_sales_by_store",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "reporting"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "vw_gold_daily_sales_summary",
+        "sourceLineageTag": "[reporting].[vw_gold_daily_sales_summary]",
+        "columns": [
+          {
+            "name": "sale_date",
+            "dataType": "dateTime",
+            "sourceColumn": "sale_date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "sale_date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "store_id",
+            "dataType": "int64",
+            "sourceColumn": "store_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "store_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "transaction_count",
+            "dataType": "int64",
+            "sourceColumn": "transaction_count",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "transaction_count",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_quantity_sold",
+            "dataType": "int64",
+            "sourceColumn": "total_quantity_sold",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "total_quantity_sold",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_sales_amount",
+            "dataType": "double",
+            "sourceColumn": "total_sales_amount",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "total_sales_amount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "average_unit_price",
+            "dataType": "double",
+            "sourceColumn": "average_unit_price",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "average_unit_price",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "vw_gold_daily_sales_summary",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "reporting"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}

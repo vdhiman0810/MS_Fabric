@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.72\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU04\",\"type\":2,\"version\":{\"visual\":\"2.8.0\",\"report\":\"3.2.0\",\"page\":\"2.3.1\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU04",
+            "path": "BaseThemes/CY26SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "33aba363329806d13e96",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"42147bc7d147d2105b07\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":371,\"width\":546,\"height\":349,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(vw_gold_daily_sales_summary.total_sales_amount)\"}],\"TrendLine\":[{\"queryRef\":\"vw_gold_daily_sales_summary.transaction_count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_gold_daily_sales_summary\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"total_sales_amount\"}},\"Function\":0},\"Name\":\"Sum(vw_gold_daily_sales_summary.total_sales_amount)\",\"NativeReferenceName\":\"Sum of total_sales_amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"transaction_count\"},\"Name\":\"vw_gold_daily_sales_summary.transaction_count\",\"NativeReferenceName\":\"transaction_count\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 349.00,
+          "width": 546.00,
+          "x": 10.00,
+          "y": 371.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"99872dc207e3e4b50a5d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.216647662485746,\"y\":0,\"z\":0,\"width\":545.8608893956671,\"height\":360.50171037628274,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_gold_daily_sales_by_store.store_id\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_gold_daily_sales_by_store.total_sales_amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_gold_daily_sales_by_store\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"store_id\"},\"Name\":\"vw_gold_daily_sales_by_store.store_id\",\"NativeReferenceName\":\"store_id\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"total_sales_amount\"}},\"Function\":0},\"Name\":\"Sum(vw_gold_daily_sales_by_store.total_sales_amount)\",\"NativeReferenceName\":\"Sum of total_sales_amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"total_sales_amount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 360.50,
+          "width": 545.86,
+          "x": 10.22,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b1395e82cabb0a576c9d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":579.4298745724059,\"y\":11.676168757126568,\"z\":1000,\"width\":545.8608893956671,\"height\":348.8255416191562,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(vw_gold_daily_sales_summary.total_sales_amount)\"}],\"Category\":[{\"queryRef\":\"vw_gold_daily_sales_summary.sale_date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_gold_daily_sales_summary\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"total_sales_amount\"}},\"Function\":0},\"Name\":\"Sum(vw_gold_daily_sales_summary.total_sales_amount)\",\"NativeReferenceName\":\"Sum of total_sales_amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"sale_date\"},\"Name\":\"vw_gold_daily_sales_summary.sale_date\",\"NativeReferenceName\":\"sale_date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"sale_date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 348.83,
+          "width": 545.86,
+          "x": 579.43,
+          "y": 11.68,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c6cbbcf4cd4d8004670a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":579,\"y\":371,\"width\":546,\"height\":349,\"z\":2001,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_gold_daily_sales_summary.sale_date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_gold_daily_sales_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"sale_date\"},\"Name\":\"vw_gold_daily_sales_summary.sale_date\",\"NativeReferenceName\":\"sale_date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"sale_date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2026-04-16T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_gold_daily_sales_summary\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"sale_date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2026-04-17T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 349.00,
+          "width": 546.00,
+          "x": 579.00,
+          "y": 371.00,
+          "z": 2001.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

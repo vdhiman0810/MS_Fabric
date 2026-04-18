@@ -1,0 +1,81 @@
+table vw_gold_daily_sales_summary
+	lineageTag: ce04058d-e565-4aff-bead-1296e68cf33b
+	sourceLineageTag: [reporting].[vw_gold_daily_sales_summary]
+
+	column sale_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 9837e803-06e4-4e72-8326-fb82b5ec59fd
+		sourceLineageTag: sale_date
+		summarizeBy: none
+		sourceColumn: sale_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2f08a5ff-04e9-43ca-b2d5-54e45513c948
+		sourceLineageTag: store_id
+		summarizeBy: sum
+		sourceColumn: store_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_count
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 09c704b9-8806-4586-8b58-41aa0cd3abac
+		sourceLineageTag: transaction_count
+		summarizeBy: sum
+		sourceColumn: transaction_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_quantity_sold
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: cd1bd672-b05c-4e14-901d-4976e3a3e681
+		sourceLineageTag: total_quantity_sold
+		summarizeBy: sum
+		sourceColumn: total_quantity_sold
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_sales_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 89997d0c-d544-4fed-bec2-5692d2743db4
+		sourceLineageTag: total_sales_amount
+		summarizeBy: sum
+		sourceColumn: total_sales_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column average_unit_price
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 2b01d0c0-ece2-451f-b180-2824b0ebbe6a
+		sourceLineageTag: average_unit_price
+		summarizeBy: sum
+		sourceColumn: average_unit_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vw_gold_daily_sales_summary = entity
+		mode: directLake
+		source
+			entityName: vw_gold_daily_sales_summary
+			schemaName: reporting
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,70 @@
+table vw_gold_daily_sales_by_store
+	lineageTag: 4395356d-c354-4df5-80a0-db90ad9306f3
+	sourceLineageTag: [reporting].[vw_gold_daily_sales_by_store]
+
+	column store_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 4069b46a-4458-4173-8147-c83b6946e302
+		sourceLineageTag: store_id
+		summarizeBy: sum
+		sourceColumn: store_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_transactions
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 96d86327-137b-4ab8-be24-a95db83a0475
+		sourceLineageTag: total_transactions
+		summarizeBy: sum
+		sourceColumn: total_transactions
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_quantity_sold
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2034c8a0-fb06-4fd6-af86-e614d431b94f
+		sourceLineageTag: total_quantity_sold
+		summarizeBy: sum
+		sourceColumn: total_quantity_sold
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_sales_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e770e522-0ba5-49c0-bac2-9dd21925bcaf
+		sourceLineageTag: total_sales_amount
+		summarizeBy: sum
+		sourceColumn: total_sales_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_unit_price
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 50ab033a-1d03-408b-b604-be5b0008170a
+		sourceLineageTag: avg_unit_price
+		summarizeBy: sum
+		sourceColumn: avg_unit_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vw_gold_daily_sales_by_store = entity
+		mode: directLake
+		source
+			entityName: vw_gold_daily_sales_by_store
+			schemaName: reporting
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
