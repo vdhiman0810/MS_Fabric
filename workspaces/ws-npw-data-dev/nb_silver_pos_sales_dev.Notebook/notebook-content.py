@@ -19,7 +19,6 @@ silver_output_path = "abfss://ws-npw-data-dev@onelake.dfs.fabric.microsoft.com/l
 
 df_bronze = spark.read.format("delta").load(bronze_path)
 
-# Step 1: Standardize datatypes.
 df_typed = (
     df_bronze
     .withColumn("sale_date", F.to_date("sale_date"))
@@ -29,7 +28,6 @@ df_typed = (
     .withColumn("total_amount", F.col("total_amount").cast("double"))
 )
 
-# Step 2: Apply validation rules.
 df_validated = (
     df_typed
     .withColumn(
@@ -45,7 +43,6 @@ df_validated = (
     )
 )
 
-# Step 3: Detect duplicates by business key and keep the latest ingested row.
 duplicate_key = [
     "sale_date",
     "store_id",
@@ -63,7 +60,6 @@ df_ranked = (
     .withColumn("is_duplicate_record", F.col("row_rank") > 1)
 )
 
-# Step 4: Split accepted and rejected rows.
 df_rejected = (
     df_ranked
     .filter((~F.col("is_valid_record")) | F.col("is_duplicate_record"))
@@ -95,6 +91,7 @@ display(df_rejected)
 (
     df_silver.write
     .mode("overwrite")
+    .option("mergeSchema", "true")
     .format("delta")
     .save(silver_output_path)
 )
