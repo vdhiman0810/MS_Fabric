@@ -7,10 +7,10 @@
                     "current_machine_note":  "Use this file as the handoff checkpoint when resuming on another computer. Current resume location is this Mac workspace."
                 },
     "progress":  {
-                     "overall_percent":  66,
+                     "overall_percent":  45,
                      "current_phase":  "Phase 5",
                      "current_phase_name":  "Transformation, Incremental Loads, and Data Quality",
-                     "current_phase_percent":  10,
+                     "current_phase_percent":  40,
                      "status":  "in_progress"
                  },
     "full_roadmap":  [
